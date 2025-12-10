@@ -98,12 +98,13 @@ def process_family(stem, files, out_dir, families):
 
         font = f.fontname
         corrections = {
-            "Reg": "Regular",
+            "BdIta": "Bold Italic",
             "Bol": "Bold",
             "BolIta": "Bold Italic",
             "Ita": "Italic",
-            "Med": "Medium",
             "MedIta": "Medium Italic",
+            "Med": "Medium",
+            "Reg": "Regular",
         }
         for old, new in corrections.items():
             if font.endswith(f"-{old}"):
